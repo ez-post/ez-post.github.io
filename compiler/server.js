@@ -190,7 +190,7 @@ var NodeApp = function() {
     routes['/.well-known/*:path'] = function(req, res) {
       wellknownRoute(req, res, req.path.toString());
     };
-    routes['/ext/**/*:path'] = function(req, res) {
+    routes['/css/*:path'] = function(req, res) {
       libraryRoute(req, res, req.path.toString());
     };
     routes['/*:path'] = function(req, res) {

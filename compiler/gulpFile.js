@@ -74,16 +74,13 @@ gulp.task('image:html', image_func(''));
 gulp.task('image', ['image:html']);
 
 //Basic file copy
-gulp.task('copy:basic', function () {
-    return gulp.src(['./src/**/lib/**']).pipe(gulp.dest('../ext/'));
-});
 gulp.task('copy:favicon', function () {
     return gulp.src(['./src/favicon.ico']).pipe(gulp.dest('../'));
 });
 gulp.task('copy:robots', function () {
     return gulp.src(['./src/robots.txt']).pipe(gulp.dest('../'));
 });
-gulp.task('copy', ['copy:basic', 'copy:favicon', 'copy:robots']);
+gulp.task('copy', ['copy:favicon', 'copy:robots']);
 
 //Cache Busting for production release
 gulp.task('cachebust', function () {
