@@ -4,12 +4,7 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-      index: "./src/js/index.tsx",
-      about: "./src/js/about.tsx",
-      develop: "./src/js/develop.tsx",
-      portfolio: "./src/js/portfolio.tsx",
-      technology: "./src/js/technology.tsx",
-      progressive: "./src/js/progressive.tsx"
+      index: "./src/js/index.tsx"
     },
     output: {
       filename: "[name].bundle.js",
@@ -56,7 +51,6 @@ module.exports = {
       "react": "React",
       "react-dom": "ReactDOM",
       "react-addons-css-transition-group": "var React.addons.CSSTransitionGroup",
-      "react-addons-transition-group": "var React.addons.TransitionGroup",
-      "trianglify": "Trianglify"
+      "react-addons-transition-group": "var React.addons.TransitionGroup"
     },
 };

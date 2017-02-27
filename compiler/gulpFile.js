@@ -17,26 +17,22 @@ var pkg = require('./package.json'),
   path = require('path'),
   isDist = process.argv.indexOf('default') === -1 && process.argv.indexOf('serve') === -1;
 
-
 /*
  *
  * WEBPACK converstion functionality
  *
  */
-var webpack_func = function(loc) {
-  const location = loc;
-  const webpack_location = (location === '' ? '.' : './src/' + location)
+var webpack_func = function() {
   return function() {
-    return gulp.src('src/' + location + '/js/*.tsx')
+    return gulp.src('src/js/*.tsx')
       .pipe(isDist ? through() : plumber())
-      .pipe(webpack(require(webpack_location + '/webpack.config.js')))
-      .pipe(gulp.dest('/' + location + '/ext/js/'))
+      .pipe(webpack(require('./webpack.config.js')))
+      .pipe(gulp.dest('../ext/js/'))
       .pipe(connect.reload());
   }
 };
-gulp.task('webpack:html', ['clean:js'], webpack_func(''));
-gulp.task('webpack:patternlibrary', webpack_func('patternlibrary'));
-gulp.task('webpack', ['webpack:html', 'webpack:patternlibrary']);
+gulp.task('webpack:html', webpack_func());
+gulp.task('webpack', ['webpack:html']);
 
 /*
  *
@@ -57,9 +53,8 @@ var pug_func =  function(loc) {
   };
 };
 gulp.task('pug:html', pug_func('html'));
-gulp.task('pug:patternlibrary', pug_func('patternlibrary'));
 gulp.task('pug', function(callback) {
-  runSequence(['pug:html', 'pug:patternlibrary'], callback)
+  runSequence(['pug:html'], callback)
 });
 
 /*
@@ -76,8 +71,7 @@ var image_func = function(loc) {
   };
 };
 gulp.task('image:html', image_func(''));
-gulp.task('image:patternlibrary', image_func('patternlibrary'));
-gulp.task('image', ['image:html', 'image:patternlibrary']);
+gulp.task('image', ['image:html']);
 
 //Basic file copy
 gulp.task('copy:basic', function () {
@@ -93,7 +87,7 @@ gulp.task('copy', ['copy:basic', 'copy:favicon', 'copy:robots']);
 
 //Cache Busting for production release
 gulp.task('cachebust', function () {
-  return gulp.src(['./!(patternlibrary)/*.html','./*.html'])
+  return gulp.src(['./*.html'])
     .pipe(cachebust({
       type: 'timestamp'
     }))
@@ -117,14 +111,11 @@ gulp.task('open', ['connect-server', 'connect'], function (done) {
 gulp.task('watch', function() {
   gulp.watch('src/js/**/*.tsx', ['webpack:html']);
   gulp.watch('src/css/**/*.scss', ['webpack:html']);
-  gulp.watch('src/patternlibrary/**/*.tsx', ['webpack:patternlibrary']);
-  gulp.watch('src/patternlibrary/**/*.scss', ['webpack:patternlibrary']);
   gulp.watch('src/**/*.pug', ['pug']);
   gulp.watch('src/img/', ['image:html']);
-  gulp.watch('src/patternlibrary/img/', ['image:patternlibrary']);
 });
 
 //Task open to public
-gulp.task('build', function(callback) {runSequence('copy', 'image', 'pug', callback)});
+gulp.task('build', function(callback) {runSequence('copy', 'image', 'pug', 'webpack', callback)});
 gulp.task('serve', function(callback) {runSequence('build', 'open', 'watch')});
 gulp.task('default', ['serve']);

@@ -10,7 +10,7 @@ var express = require('express'),
  */
 var NodeApp = function() {
   // Default folder
-  const WEBROOT = "../",
+  const WEBROOT = "..",
   // Default language
     DEFAULT_LANGUAGE = "en",
     DEFAULT_LANGUAGE_REGEX = new RegExp("\\/"+ DEFAULT_LANGUAGE +"\\/|\\/"+ DEFAULT_LANGUAGE +"$"),
@@ -130,11 +130,11 @@ var NodeApp = function() {
 
     const indexRoute = function(req, res) {
       res.setHeader(CONTENT_TYPE, "text/html");
-      self.sendContentWithCacheHandler('index.html', req.headers[USER_AGENT], res);
+      self.sendContentWithCacheHandler('/index.html', req.headers[USER_AGENT], res);
     };
 
     const libraryRoute = function(req, res, path) {
-      var reqPath = self.replacePath(WEBROOT + path);
+      var reqPath = WEBROOT + path;
       var resource = fs.readFileSync(reqPath);
       var header = {};
       header[CONTENT_TYPE] = mime(reqPath);
@@ -145,7 +145,7 @@ var NodeApp = function() {
 
     const robotsRoute = function(req, res) {
       res.setHeader(CONTENT_TYPE, "text/plain");
-      self.sendContentWithCacheHandler('robots.txt', req.headers[USER_AGENT], res);
+      self.sendContentWithCacheHandler('/robots.txt', req.headers[USER_AGENT], res);
     };
 
     //Created to handle iOS/Android app links
