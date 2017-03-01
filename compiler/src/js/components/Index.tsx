@@ -8,7 +8,7 @@ declare function require(path: string): any;
 export class Index extends React.Component<{}, {}> {
   render() {
     return (
-      <div className={styles['reacttoolbox']}>
+      <div>
       </div>
     );
   }

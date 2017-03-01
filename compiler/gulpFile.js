@@ -65,8 +65,8 @@ gulp.task('pug', function(callback) {
 var image_func = function(loc) {
   const location = loc;
   return function() {
-    return gulp.src(['./src/' + location + '/img/**/*'])
-      .pipe(gulp.dest('/' + location + '/ext/img'))
+    return gulp.src(['./src/img/**/*'])
+      .pipe(gulp.dest('../ext/img'))
       .pipe(connect.reload());
   };
 };
