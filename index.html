@@ -21,7 +21,7 @@
       <h3>Your story, we post it</h3>
     </div>
     <hr>
-    <div class="center"><img src="/ext/img/postcard.svg" id="banner"></div>
+    <div class="center"><img src="/ext/img/worldmap.svg" id="banner"></div>
     <div id="body">
       <div class="post blue">
         <div class="content">
@@ -40,43 +40,110 @@
           <p>Customizable photo on front side</p>
           <p>User message and recipient address on the back</p>
           <p>Mailing and stamp included (Malaysia-Penang Stamp)</p>
-          <p><strong>Cost: RM 3.50 nett / each card</strong></p>
+          <p><strong>Cost: RM 3.50 nett / each card</strong></p><img src="/ext/img/postcard_img.jpg">
         </div>
       </div>
       <div class="post blue">
         <h2>PURCHASING STEPS</h2>
         <div class="content">
-          <ol>
-            <li>Take a photo from your camera.</li>
-            <li>Provide a short message for your recipient (optional).</li>
-            <li>Provide the full recipient address to send to.</li>
-            <li>Make online payment to EZ-post and attach a screenshot.
+          <div class="step">
+            <div class="label"><img src="/ext/img/step1.svg"></div>
+            <div class="description">
+              <div class="title">STEP 1</div>
+              <p>Take a photo from your camera.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="label"><img src="/ext/img/step2.svg"></div>
+            <div class="description">
+              <div class="title">STEP 2</div>
+              <p>Provide a short message for your recipient (optional).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="label"><img src="/ext/img/step3.svg"></div>
+            <div class="description">
+              <div class="title">STEP 3</div>
+              <p>Provide the full recipient address to send to.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="label"><img src="/ext/img/step4.svg"></div>
+            <div class="description">
+              <div class="title">STEP 4</div>
+              <p>Send it to email: instapostcard@gmail.com</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="label"><img src="/ext/img/step5.svg"></div>
+            <div class="description">
+              <div class="title">STEP 5</div>
+              <p>Make online payment to EZ-post and attach a screenshot.</p>
               <ol>
-                <li><strong>Malaysia</strong>– Maybank – 101 302 164 354</li>
-                <li><strong>Singapore</strong>– OCBC bank - 622-7-105738</li>
+                <li><strong>Malaysia</strong>&nbsp; – Maybank &gt;&gt;&gt; 101 302 164 354</li>
+                <li><strong>Singapore</strong>&nbsp; – OCBC &gt;&gt;&gt; 622-7-105738</li>
               </ol>
-            </li>
-            <li>Send it to email: instapostcard@gmail.com .</li>
-            <li>We will inform you when post card is printed and send with a tracking number.</li>
-            <li>Wait for up to 14 working days depending on the location of recipient.</li>
-            <li>We have a policy of fully refund or resending post card if post card was not reach within 30 working days, tracking number is required for administrative purposes.</li>
-          </ol>
+            </div>
+          </div>
+          <div class="step">
+            <div class="label"><img src="/ext/img/step6.svg"></div>
+            <div class="description">
+              <div class="title">STEP 6</div>
+              <p>We will inform you when post card is printed and send with a tracking number.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="label"><img src="/ext/img/step7.svg"></div>
+            <div class="description">
+              <div class="title">STEP 7</div>
+              <p>Wait for up to 14 working days depending on the location of recipient.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="label"><img src="/ext/img/step8.svg"></div>
+            <div class="description">
+              <div class="title">NOTICE</div>
+              <p>We have a policy of fully refund or resending post card if post card was not reach within 30 working days, tracking number is required for administrative purposes.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="post">
         <h2>CONTACT</h2>
-        <div class="content">
+        <div class="content contact">
           <p><strong>Address: <br/></strong>
             453B, Jalan Pokok Ceri, <br/>
             11500, Air Itam, <br/>
             Penang, Malaysia
           </p>
           <p><strong>Contact Person: <br/></strong>
-            Jern (Malaysia) via email instapostcard@gmail.com  <br/>
-            KaiJu (Malaysia) via email instapostcard@gmail.com
+            Jern (Malaysia) <br>
+            KaiJu (Singapore)
           </p>
+          <p><strong>Email: <br/></strong><a href="mailto:instapostcard@gmail.com">instapostcard@gmail.com</a></p>
         </div>
       </div>
+      <div id="backtotop"><a href="javascript:scrollToTop();"> ^ Back to top</a></div>
+      <div id="footer">&copy; 2017 Ez-Post hosted on github</div>
     </div>
+    <script>
+      function scrollToTop() {
+        var scrollDuration = 500,
+            scrollHeight = window.scrollY,
+            scrollStep = Math.PI / ( scrollDuration / 15 ),
+            cosParameter = scrollHeight / 2,
+            scrollCount = 0,
+            scrollMargin,
+            scrollInterval = setInterval( function() {
+              if ( scrollHeight > 0 ) {
+                  scrollCount = scrollCount + 1;
+                  scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
+                  window.scrollTo( 0, ( window.scrollY - scrollMargin ) );
+                  scrollHeight -= scrollMargin;
+              }
+              else clearInterval(scrollInterval);
+            }, 15 );
+      }
+    </script>
   </body>
 </html>

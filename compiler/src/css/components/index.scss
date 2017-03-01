@@ -6,11 +6,17 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     margin: 0;
+    min-width: 320px;
     padding: 0;
   }
 
-  .company-title {
-    color: #92d050;
+  a {
+    color: #2196F3;
+    text-decoration: none;
+
+    &:hover {
+      color: #4CAF50;
+    }
   }
 
   h1 {
@@ -20,6 +26,7 @@
 
   h2 {
     text-align: center;
+    letter-spacing: 2pt;
   }
 
   h3 {
@@ -27,18 +34,82 @@
     text-align: left;
   }
 
+  .company-title {
+    color: #92d050;
+  }
+
   #header {
     padding: 10px 0 0 10px;
+  }
+
+  #body {
+    margin-top: -8px;
+  }
+
+  #footer {
+    background: #000;
+    color: #fff;
+    font-size: 8pt;
+    padding: 8px 20px;
+    text-align: right;
+  }
+
+  #backtotop {
+    font-size: 1rem;
+    padding: 0 40px 20px 0;
+    text-align: right;
   }
 
   .content {
     @include screen-fit();
     text-align: justify;
+
+    &.contact {
+      text-align: left;
+    }
+
+    .step {
+      align-items: center;
+      border-bottom: 1px dotted #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 50px 0;
+
+      @include breakpoint($breakpoint-tablet) {
+        flex-direction: row;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .label {
+        padding-right: 20px;
+
+        img {
+          width: 100px;
+        }
+      }
+      .description {
+        width: 100%;
+
+        .title {
+          color: #FFEB3B;
+          font-weight: bold;
+          font-size: 1.5rem;
+          font-style: italic;
+          text-align: center;
+
+          @include breakpoint($breakpoint-tablet) {
+            text-align: left;
+          }
+        }
+      }
+    }
   }
 
   #banner {
     width: 80vw;
-    padding: 10px 0;
   }
 
   .center {
@@ -47,8 +118,8 @@
 
   .post {
     color: #000;
-    padding: 40px;
-    &.blue {
+    padding: 40px 10px;
+    &:nth-child(odd) {
       background: #2196f3;
       color: #fff;
     }

@@ -9,15 +9,19 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="800"
-   height="500"
-   viewBox="0 0 799.99999 500.00002"
+   width="1200"
+   height="800"
+   viewBox="0 0 1200 800"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="postcard.svg">
   <defs
      id="defs4">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4197"
+       is_visible="true" />
     <inkscape:path-effect
        effect="spiro"
        id="path-effect4528"
@@ -35,7 +39,7 @@
        id="path-effect4368"
        is_visible="true" />
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter4354">
       <feFlood
@@ -110,6 +114,70 @@
        effect="spiro"
        id="path-effect4376-5-0"
        is_visible="true" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter4199">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4201" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite4203" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur4205" />
+      <feOffset
+         dx="5"
+         dy="5"
+         result="offset"
+         id="feOffset4207" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite4209" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter4199-8">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4201-1" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite4203-2" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur4205-4" />
+      <feOffset
+         dx="5"
+         dy="5"
+         result="offset"
+         id="feOffset4207-5" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite4209-6" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -118,16 +186,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="471.74474"
-     inkscape:cy="217.34493"
+     inkscape:zoom="0.7"
+     inkscape:cx="728.16004"
+     inkscape:cy="427.18228"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="-8"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -146,124 +214,146 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-552.36203)">
+     transform="translate(0,-252.362)">
+    <rect
+       style="opacity:1;fill:#00aad4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4199-8)"
+       id="rect4191-8"
+       width="754.91278"
+       height="470.60284"
+       x="81.725456"
+       y="755.13214"
+       transform="matrix(0.88077796,-0.4735295,0.47302362,0.88104974,-407.22147,2.8911965)" />
+    <rect
+       style="opacity:1;fill:#00aad4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4199)"
+       id="rect4191"
+       width="754.91278"
+       height="470.60284"
+       x="81.725456"
+       y="755.13214"
+       transform="matrix(0.95168221,-0.30708465,0.30653808,0.95185839,-21.560249,-110.75198)" />
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4354)"
        id="rect4136"
        width="755.71429"
        height="464.28571"
-       x="14.285683"
-       y="569.50488" />
+       x="49.17334"
+       y="443.11176"
+       transform="matrix(0.99681884,0.07970066,-0.07970066,0.99681884,55.176692,-31.886522)" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 460.23574,765.87973 271.61976,0"
+       d="m 497.7575,645.02744 270.7557,21.64828"
        id="path4374"
        inkscape:path-effect="#path-effect4376"
-       inkscape:original-d="m 460.23574,765.87973 271.61976,0"
+       inkscape:original-d="m 497.7575,645.02744 270.7557,21.64828"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 458.19011,813.79062 271.61978,0"
+       d="m 491.89985,692.62288 270.75571,21.64828"
        id="path4374-9"
        inkscape:path-effect="#path-effect4376-5"
-       inkscape:original-d="m 458.19011,813.79062 271.61978,0"
+       inkscape:original-d="m 491.89985,692.62288 270.75571,21.64828"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 457.45302,862.03178 271.6198,0"
+       d="m 487.32025,740.65183 270.75574,21.64828"
        id="path4374-9-1"
        inkscape:path-effect="#path-effect4376-5-3"
-       inkscape:original-d="m 457.45302,862.03178 271.6198,0"
+       inkscape:original-d="m 487.32025,740.65183 270.75574,21.64828"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 455.25013,910.76834 271.61982,0"
+       d="m 481.24003,789.05778 270.75576,21.64828"
        id="path4374-9-1-8"
        inkscape:path-effect="#path-effect4376-5-3-2"
-       inkscape:original-d="m 455.25013,910.76834 271.61982,0"
+       inkscape:original-d="m 481.24003,789.05778 270.75576,21.64828"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 418.5714,593.7906 -0.71429,415.7143"
+       d="M 469.94132,470.16508 437.10353,884.58051"
        id="path4526"
        inkscape:path-effect="#path-effect4528"
-       inkscape:original-d="m 418.5714,593.7906 -0.71429,415.7143"
-       inkscape:connector-curvature="0" />
+       inkscape:original-d="M 469.94132,470.16508 437.10353,884.58051"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Viner Hand ITC';-inkscape-font-specification:'Viner Hand ITC';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-63.201923"
-       y="670.51215"
+       x="47.269314"
+       y="522.67249"
        id="text4530"
        sodipodi:linespacing="125%"
-       transform="matrix(0.98896282,-0.14816392,0.14816392,0.98896282,0,0)"><tspan
+       transform="matrix(0.99762553,-0.0688716,0.0688716,0.99762553,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4532"
-         x="-63.201923"
-         y="670.51215"
+         x="47.269314"
+         y="522.67249"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'SketchFlow Print';-inkscape-font-specification:'SketchFlow Print';stroke:#37abc8">Hi Dad &amp; Mom,</tspan><tspan
          sodipodi:role="line"
-         x="-63.201923"
-         y="720.51215"
+         x="47.269314"
+         y="572.67249"
          id="tspan4534"
          style="stroke:#37abc8" /></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="102.85712"
-       y="759.50488"
+       x="190.20459"
+       y="596.92914"
        id="text4536"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99681884,0.07970066,-0.07970066,0.99681884,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4538"
-         x="102.85712"
-         y="759.50488"
+         x="190.20459"
+         y="596.92914"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'SketchFlow Print';-inkscape-font-specification:'SketchFlow Print';stroke:#37abc8">Loving you </tspan><tspan
          sodipodi:role="line"
-         x="102.85712"
-         y="809.50488"
+         x="190.20459"
+         y="646.92914"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'SketchFlow Print';-inkscape-font-specification:'SketchFlow Print';stroke:#37abc8"
          id="tspan4548">both from </tspan><tspan
          sodipodi:role="line"
-         x="102.85712"
-         y="859.50488"
+         x="190.20459"
+         y="696.92914"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'SketchFlow Print';-inkscape-font-specification:'SketchFlow Print';stroke:#37abc8"
          id="tspan4554">Japan!</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="213.57138"
-       y="980.21918"
+       x="300.91882"
+       y="817.64343"
        id="text4540"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99681884,0.07970066,-0.07970066,0.99681884,0,0)"><tspan
          sodipodi:role="line"
-         x="213.57138"
-         y="980.21918"
+         x="300.91882"
+         y="817.64343"
          id="tspan4544"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.24999809px;font-family:'SketchFlow Print';-inkscape-font-specification:'SketchFlow Print';stroke:#37abc8">Your dearest</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="464.99997"
-       y="753.07629"
+       x="552.34735"
+       y="590.50055"
        id="text4556"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99681884,0.07970066,-0.07970066,0.99681884,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4558"
-         x="464.99997"
-         y="753.07629"
+         x="552.34735"
+         y="590.50055"
          style="font-size:22.50000191px">88 Street,</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="463.82159"
-       y="803.69568"
+       x="551.16901"
+       y="641.11993"
        id="text4556-5"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99681884,0.07970066,-0.07970066,0.99681884,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4558-1"
-         x="463.82159"
-         y="803.69568"
+         x="551.16901"
+         y="641.11993"
          style="font-size:22.50000191px">Georgetown</tspan></text>
     <text
        xml:space="preserve"
@@ -275,58 +365,61 @@
          sodipodi:role="line"
          id="tspan4580"
          x="462.14282"
-         y="858.79059"></tspan></text>
+         y="858.79059" /></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="462.67596"
-       y="849.79468"
+       x="550.02338"
+       y="687.21893"
        id="text4556-5-1"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99681884,0.07970066,-0.07970066,0.99681884,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4558-1-7"
-         x="462.67596"
-         y="849.79468"
+         x="550.02338"
+         y="687.21893"
          style="font-size:22.50000191px">8888, Penang</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="462.40906"
-       y="899.11877"
+       x="549.75647"
+       y="736.54303"
        id="text4556-5-1-8"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99681884,0.07970066,-0.07970066,0.99681884,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4558-1-7-5"
-         x="462.40906"
-         y="899.11877"
+         x="549.75647"
+         y="736.54303"
          style="font-size:22.50000191px">Malaysia.</tspan></text>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#37abc8;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4618"
        width="97.85714"
        height="117.85714"
-       x="647.85706"
-       y="590.93347" />
+       x="735.20447"
+       y="428.35764"
+       transform="matrix(0.99681884,0.07970066,-0.07970066,0.99681884,0,0)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="195.47415"
-       y="916.60645"
+       x="355.0083"
+       y="823.81995"
        id="text4620"
        sodipodi:linespacing="125%"
-       transform="matrix(0.85200609,-0.52353187,0.52353187,0.85200609,0,0)"><tspan
+       transform="matrix(0.89102156,-0.45396098,0.45396098,0.89102156,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4622"
-         x="195.47415"
-         y="916.60645"
+         x="355.0083"
+         y="823.81995"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75000191px;font-family:arial;-inkscape-font-specification:arial;fill:#ff0000;stroke:none">STAMPED</tspan></text>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4624"
        width="155.71428"
        height="45"
-       x="184.20218"
-       y="880.50543"
-       transform="matrix(0.86148922,-0.50777586,0.50777586,0.86148922,0,0)" />
+       x="342.00317"
+       y="784.80103"
+       transform="matrix(0.89921876,-0.43749928,0.43749928,0.89921876,0,0)" />
   </g>
 </svg>

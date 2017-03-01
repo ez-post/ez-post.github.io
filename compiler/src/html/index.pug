@@ -24,7 +24,7 @@ html(lang="en")
       h3 Your story, we post it
     hr
     div(class="center")
-      img(src="/ext/img/postcard.svg" id="banner")
+      img(src="/ext/img/worldmap.svg" id="banner")
     div(id="body")
       div(class="post blue")
         div(class="content")
@@ -43,28 +43,68 @@ html(lang="en")
           p Mailing and stamp included (Malaysia-Penang Stamp)
           p
             strong Cost: RM 3.50 nett / each card
+          img(src="/ext/img/postcard_img.jpg")
       div(class="post blue")
         h2 PURCHASING STEPS
         div(class="content")
-          ol
-            li Take a photo from your camera.
-            li Provide a short message for your recipient (optional).
-            li Provide the full recipient address to send to.
-            li Make online payment to EZ-post and attach a screenshot.
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step1.svg")
+            div(class="description")
+              div(class="title") STEP 1
+              p Take a photo from your camera.
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step2.svg")
+            div(class="description")
+              div(class="title") STEP 2
+              p Provide a short message for your recipient (optional).
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step3.svg")
+            div(class="description")
+              div(class="title") STEP 3
+              p Provide the full recipient address to send to.
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step4.svg")
+            div(class="description")
+              div(class="title") STEP 4
+              p Send it to email: instapostcard@gmail.com
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step5.svg")
+            div(class="description")
+              div(class="title") STEP 5
+              p Make online payment to EZ-post and attach a screenshot.
               ol
                 li
                   strong Malaysia
-                  | – Maybank – 101 302 164 354
+                  | &nbsp; – Maybank &gt;&gt;&gt; 101 302 164 354
                 li
                   strong Singapore
-                  | – OCBC bank - 622-7-105738
-            li Send it to email: instapostcard@gmail.com .
-            li We will inform you when post card is printed and send with a tracking number.
-            li Wait for up to 14 working days depending on the location of recipient.
-            li We have a policy of fully refund or resending post card if post card was not reach within 30 working days, tracking number is required for administrative purposes.
+                  | &nbsp; – OCBC &gt;&gt;&gt; 622-7-105738
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step6.svg")
+            div(class="description")
+              div(class="title") STEP 6
+              p We will inform you when post card is printed and send with a tracking number.
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step7.svg")
+            div(class="description")
+              div(class="title") STEP 7
+              p Wait for up to 14 working days depending on the location of recipient.
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step8.svg")
+            div(class="description")
+              div(class="title") NOTICE
+              p We have a policy of fully refund or resending post card if post card was not reach within 30 working days, tracking number is required for administrative purposes.
       div(class="post")
         h2 CONTACT
-        div(class="content")
+        div(class="content contact")
           p
             strong Address: <br/>
             | 453B, Jalan Pokok Ceri, <br/>
@@ -72,5 +112,30 @@ html(lang="en")
             | Penang, Malaysia
           p
             strong Contact Person: <br/>
-            | Jern (Malaysia) via email instapostcard@gmail.com  <br/>
-            | KaiJu (Malaysia) via email instapostcard@gmail.com
+            | Jern (Malaysia) <br>
+            | KaiJu (Singapore)
+          p
+            strong Email: <br/>
+            <a href="mailto:instapostcard@gmail.com">instapostcard@gmail.com</a>
+      div(id="backtotop")
+        <a href="javascript:scrollToTop();"> ^ Back to top</a>
+      div(id="footer")
+        | &copy; 2017 Ez-Post hosted on github
+    script.
+      function scrollToTop() {
+        var scrollDuration = 500,
+            scrollHeight = window.scrollY,
+            scrollStep = Math.PI / ( scrollDuration / 15 ),
+            cosParameter = scrollHeight / 2,
+            scrollCount = 0,
+            scrollMargin,
+            scrollInterval = setInterval( function() {
+              if ( scrollHeight > 0 ) {
+                  scrollCount = scrollCount + 1;
+                  scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
+                  window.scrollTo( 0, ( window.scrollY - scrollMargin ) );
+                  scrollHeight -= scrollMargin;
+              }
+              else clearInterval(scrollInterval);
+            }, 15 );
+      }
