@@ -44,6 +44,10 @@
 
   #body {
     margin-top: -8px;
+
+    &.reset_password {
+      font-size: 2rem;
+    }
   }
 
   #footer {
@@ -148,7 +152,7 @@
     border: 1px solid #018dc4;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    font: normal 20px/normal Arial,serif;
+    font: normal 2rem/normal Arial,serif;
     color: #fff;
     background: #303f9f;
     -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
@@ -162,24 +166,22 @@
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
+    font: normal 2rem/normal Arial,serif;
     padding: 10px 20px;
     border: 1px solid #b7b7b7;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    font: normal 16px/normal Times New Roman,Times,serif;
     background: #fcfcfc;
     box-shadow: inset 2px 2px 2px 0 rgba(0,0,0,.2);
     text-shadow: 1px 1px 0 hsla(0,0%,100%,.66);
   }
 
   .error {
-    font-size: 1.2rem;
     font-weight: bold;
     color: #C2185B;
     margin: 20px;
   }
   .success {
-    font-size: 1.2rem;
     font-weight: bold;
     color: #000;
     margin: 20px;
