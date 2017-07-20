@@ -142,6 +142,16 @@
     width: 80vw;
   }
 
+  #rules-regulation {
+    color: #000;
+    padding: 40px 10px;
+
+    .item {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+  }
+
   .center {
     text-align: center;
   }
@@ -171,7 +181,7 @@
     border: 1px solid #018dc4;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    font: normal 2rem/normal Arial,serif;
+    font: normal 1rem/normal Arial,serif;
     color: #fff;
     background: #303f9f;
     -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
@@ -185,7 +195,7 @@
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    font: normal 2rem/normal Arial,serif;
+    font: normal 1rem/normal Arial,serif;
     padding: 10px 20px;
     border: 1px solid #b7b7b7;
     -webkit-border-radius: 3px;
