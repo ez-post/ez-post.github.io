@@ -24,6 +24,13 @@
         color: #4CAF50;
       }
     }
+
+    &.link {
+      color: #FFFFFF;
+      &:hover {
+        color: #3F51B5;
+      }
+    }
   }
 
   h1 {
