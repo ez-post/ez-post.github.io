@@ -35,7 +35,7 @@
 
   h1 {
     text-align: left;
-    margin: 0;
+    margin: 0px;
   }
 
   h2 {
@@ -80,6 +80,8 @@
       text-align: left;
     }
   }
+
+  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
 
   #backtotop {
     font-size: 1rem;
@@ -175,10 +177,6 @@
     }
   }
 
-  li {
-    padding-bottom: 5px;
-  }
-
   .submitbutton {
     margin-top: 20px;
     width: 100%;
@@ -224,5 +222,41 @@
     font-weight: bold;
     color: #000;
     margin: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2196F3;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    
+    li {
+      float: left;
+    }   
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover:not(.active) {
+        background-color: #1363a3;
+        color:#ffffff;
+    }
+
+    .active {
+      background-color: #1363a3;
+      color:#ffffff;
+    }
+
+    .policy {
+      padding-bottom: 5px;
+    }
   }
 }
