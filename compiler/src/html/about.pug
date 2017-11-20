@@ -9,20 +9,101 @@ html(lang="en")
     meta(name="og:description" content="")
     meta(name="og:description" content="EZ-post is a travel printing service company that believes in capturing and eternalizing your memorable moments during travelling or other special occasion. Every journeyman has their unique story to tell and we are here to provide you a platform to share and spread your memorable moment to your friend and family.")
     include include/header.pug
-    title EZ POST: Personalized Physical Postcard Anytime Anywhere 
-    meta(name="description" content="EZ POST lets you create your own customize physical postcard in 5 minutes, anytime and anywhere at affordable price. Start suprising your friends and family with unique gift that can only be given by you")
-    script.
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-109693819-1', 'auto');
-      ga('send', 'pageview');
-
-
 
   body
     include include/body.pug
+    ul
+      li
+        a(href='/index') Home
+      li
+        a.active(href='/about') About
+      li
+        a(href='/policy') Policy
+      li
+        a(href='/article') Article
+      li
+        a(href='/contact') Contact
+
 	
     div(id="body")
       div(class="post blue")
         div(class="content")
           p
-            strong Coming Soon
+            strong EZ-Post 
+            | is a travel printing service company that believes in capturing and eternalizing your memorable moments during travelling or other special occasion.
+            | Every journeyman has their unique story to tell and we are here to provide you a platform to share and spread your memorable moment to your friend and family.
+      div(class="post")
+        h2 CUSTOMIZABLE POSTCARDS
+        div(class="content")
+          p We let you customize your own postcard, turn it into a physical postcard and directly send it to the designated address at an affordable price.
+          p We will take care of all your hassle from buying a postcard to delivering it at the post office. With that, you can actually focus more on travelling during your vacation and less on nitty-gritty logistic.
+          p 4 inch X 6 inch postcard.
+          p Customizable photo on front side of the postcard.
+          p User message and recipient address on the back.
+          p Mailing and stamp included (Malaysia Stamp).
+          p
+            strong Cost: RM 4.99 (USD 1.20) nett / each card.
+          img(src="/ext/img/postcard_img.jpg")
+      div(class="post blue")
+        h2 PURCHASING STEPS
+        div(class="content")
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step1.svg" style="max-width:100%")
+            div(class="description")
+              div(class="title") STEP 1
+              p Take a photo from your camera.
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step2.svg" style="max-width:100%")
+            div(class="description")
+              div(class="title") STEP 2
+              p Provide a short message for your recipient.
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step3.svg" style="max-width:100%")
+            div(class="description")
+              div(class="title") STEP 3
+              p Provide the full recipient address to send to.
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step5.svg" style="max-width:100%")
+            div(class="description")
+              div(class="title") STEP 4
+              p Make online payment to EZ-post.
+
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step7.svg" style="max-width:100%")
+            div(class="description")
+              div(class="title") STEP 5
+              p Postcard will reach recipient in Malaysia within 2 weeks. (Up to 4 weeks for the rest of the world)
+          div(class="step")
+            div(class="label")
+              img(src="/ext/img/step8.svg" style="max-width:100%")
+            div(class="description")
+              div(class="title") NOTICE
+              p We have a policy of resending postcard, if postcard was not reach within 6 weeks, tracking number is required for administrative purposes.
+
+      div(id="backtotop")
+        <a href="javascript:scrollToTop();"> Back to top</a>
+      div(id="footer")
+        | &copy; 2017 Ez-Post hosted on github
+    script.
+      function scrollToTop() {
+        var scrollDuration = 500,
+            scrollHeight = window.scrollY,
+            scrollStep = Math.PI / ( scrollDuration / 15 ),
+            cosParameter = scrollHeight / 2,
+            scrollCount = 0,
+            scrollMargin,
+            scrollInterval = setInterval( function() {
+              if ( scrollHeight > 0 ) {
+                  scrollCount = scrollCount + 1;
+                  scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
+                  window.scrollTo( 0, ( window.scrollY - scrollMargin ) );
+                  scrollHeight -= scrollMargin;
+              }
+              else clearInterval(scrollInterval);
+            }, 15 );
+      }

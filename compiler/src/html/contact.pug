@@ -9,20 +9,42 @@ html(lang="en")
     meta(name="og:description" content="")
     meta(name="og:description" content="EZ-post is a travel printing service company that believes in capturing and eternalizing your memorable moments during travelling or other special occasion. Every journeyman has their unique story to tell and we are here to provide you a platform to share and spread your memorable moment to your friend and family.")
     include include/header.pug
-    title EZ POST: Personalized Physical Postcard Anytime Anywhere 
-    meta(name="description" content="EZ POST lets you create your own customize physical postcard in 5 minutes, anytime and anywhere at affordable price. Start suprising your friends and family with unique gift that can only be given by you")
-    script.
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-109693819-1', 'auto');
-      ga('send', 'pageview');
-
-
 
   body
     include include/body.pug
-	
+    
+    ul
+      li
+        a(href='/index') Home
+      li
+        a(href='/about') About
+      li
+        a(href='/policy') Policy
+      li
+        a(href='/article') Article
+      li
+        a.active(href='/contact') Contact
+
     div(id="body")
-      div(class="post blue")
-        div(class="content")
+      div(class="post")
+        h2 CONTACT
+        div(class="content contact")
           p
-            strong Coming Soon
+            strong Address: <br/>
+            | 453B, Jalan Pokok Ceri, <br/>
+            | 11500, Air Itam, <br/>
+            | Penang, Malaysia
+          p(style="margin-bottom:0")
+            strong Contact Person:
+            table
+              tr
+                td KaiJu
+              tr  
+                td 
+                  i Tel: (+60) 11 880 7580				
+              tr
+                td
+                  i Tel: (+65) 9236 6081
+          p
+            strong Email: <br/>
+            <a href="mailto:theezpost@gmail.com" class="email">theezpost@gmail.com</a>
