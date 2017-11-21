@@ -179,13 +179,16 @@
   }
   
 .iconbox {
-    float:left;
-    width: 430px;
-    height: 250px;
-    margin: 0px 50px;
+    //float:left;
+	//min-width:380px;
+    //max-width: 550px;
+    display:block;
+	//height: 250px;
+    //padding: 0px 50px;
+	//box-sizing:border-box;
 	text-align: center;
 	vertical-align:center;
-	
+	//border:1px solid black;
 }
 .afterbox{
   clear:left;
