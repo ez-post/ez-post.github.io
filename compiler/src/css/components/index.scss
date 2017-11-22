@@ -32,6 +32,8 @@
       }
     }
   }
+  
+
 
   h1 {
     text-align: left;
@@ -48,6 +50,16 @@
     text-align: left;
   }
 
+  h4 {
+    margin: 0;
+    text-align: left;  
+  }
+  
+  h5 {
+    margin: 0;
+    text-align: left;    
+  }
+  
   .company-title {
     color: #2196F3;
   }
@@ -157,6 +169,13 @@
         }
       }
     }
+	
+	p{
+      .article{
+	    font-size: 10px;
+	  }
+    }
+  
   }
 
   #banner {
