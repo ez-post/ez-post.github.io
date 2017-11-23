@@ -1,4 +1,5 @@
 doctype html
+
 html(lang="en")
   head
     meta(charset="utf-8")
@@ -8,7 +9,7 @@ html(lang="en")
     meta(name="og:site_name" content="https://ez-post.github.io")
     meta(name="og:description" content="")
     meta(name="og:description" content="EZ POST lets you convert photo to quality postcard in 5 mins by leveraging on easy to use mobile app. Start surprising your friends now.")
-    include include/header.pug
+    include ../include/header.pug
     title Malaysia souvenir: Meaningful gift for friends in 4 easy steps 
     meta(name="description" content="EZ POST lets you convert photo to quality postcard in 5 mins by leveraging on easy to use mobile app. Start surprising your friends now ")
     script.
@@ -17,19 +18,9 @@ html(lang="en")
       ga('send', 'pageview');
 	  
     body
-    include include/body.pug
-    ul
-      li
-        a(href='/index') Home
-      li
-        a(href='/about') About
-      li
-        a(href='/policy') Policy
-      li
-        a.active(href='/article') Article
-      li
-        a(href='/contact') Contact
-
+    include ../include/body.pug
+    include ../include/navi-bar.pug
+	
     div(id="body")
       div(class="post blue")
         img(src="/ext/img/Design_Your_Unique_Gift.jpg" style="width:100%")
@@ -72,7 +63,7 @@ html(lang="en")
           img(src="/ext/img/ezpost_promo.jpg" style="width:100%")
           p(style='font-size:12px')
             | *EZ Post app is only available on Android today, if you are on IOS, please leave 
-            a(href='https://www.the-ez-post.com/', target='_blank') your contact
+            a(href='/index', target='_blank') your contact
             | 
             | with us so that we can inform you when IOS version is ready to use 
 		  

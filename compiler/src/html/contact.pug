@@ -12,19 +12,8 @@ html(lang="en")
 
   body
     include include/body.pug
-    
-    ul
-      li
-        a(href='/index') Home
-      li
-        a(href='/about') About
-      li
-        a(href='/policy') Policy
-      li
-        a(href='/article') Article
-      li
-        a.active(href='/contact') Contact
-
+    include include/navi-bar.pug
+	
     div(id="body")
       div(class="post")
         h2 CONTACT

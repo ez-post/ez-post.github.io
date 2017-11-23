@@ -17,22 +17,10 @@ html(lang="en")
       ga('send', 'pageview');
 
 
-
   body
     include include/body.pug
     link(href='//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css', rel='stylesheet', type='text/css')
-    ul
-      li
-        a.active(href='/index') Home
-      li
-        a(href='/about') About
-      li
-        a(href='/policy') Policy
-      li
-        a(href='/article') Article
-      li
-        a(href='/contact') Contact
-
+    include include/navi-bar.pug
 
     div(id="header")
       h1(class="company-title") EZ-Post
@@ -46,7 +34,7 @@ html(lang="en")
     div(class="iconbox")
       p
         strong Download EZ Post
-      a(href='https://play.google.com/store/apps/details?id=com.theezpost.postcard' class="link")
+      a(href='https://play.google.com/store/apps/details?id=com.theezpost.postcard' target='_blank' class="link")
         img(src="/ext/img/googleplay.svg" style="width:200px")
 
     </br>

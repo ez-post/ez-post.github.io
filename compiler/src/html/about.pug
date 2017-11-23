@@ -12,18 +12,7 @@ html(lang="en")
 
   body
     include include/body.pug
-    ul
-      li
-        a(href='/index') Home
-      li
-        a.active(href='/about') About
-      li
-        a(href='/policy') Policy
-      li
-        a(href='/article') Article
-      li
-        a(href='/contact') Contact
-
+    include include/navi-bar.pug
 	
     div(id="body")
       div(class="post blue")
