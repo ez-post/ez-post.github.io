@@ -18,7 +18,6 @@
   },
   "devDependencies": {
     "@types/react": "^0.14.55",
-    "@types/react-addons-css-transition-group": "^0.14.18",
     "@types/react-dom": "^0.14.19",
     "autoprefixer": "^6.6.0",
     "breakpoint-sass": "latest",
