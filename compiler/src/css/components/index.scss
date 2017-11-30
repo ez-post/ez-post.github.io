@@ -32,7 +32,14 @@
       &:hover {
         color: #3F51B5;
       }
+	  
     }
+    &.link2 {
+      color: #000000;
+      &:hover {
+        color: #3F51B5;
+      }
+	}
   }
   
 
@@ -219,7 +226,7 @@
     padding: 40px 10px;
     &:nth-child(odd) {
       background: #2196f3;
-      color: #fff;
+      color: #fff;	
     }
   }
 
