@@ -8,37 +8,52 @@
 
 <url>
   <loc>https://www.the-ez-post.com/</loc>
-  <lastmod>2017-11-27T11:31:33+00:00</lastmod>
+  <lastmod>2017-12-06T02:08:42+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.the-ez-post.com/index</loc>
-  <lastmod>2017-11-27T11:31:33+00:00</lastmod>
+  <lastmod>2017-12-06T02:08:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.the-ez-post.com/about</loc>
-  <lastmod>2017-11-27T11:31:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.the-ez-post.com/policy</loc>
-  <lastmod>2017-11-27T11:31:33+00:00</lastmod>
+  <lastmod>2017-12-06T02:08:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.the-ez-post.com/articles</loc>
-  <lastmod>2017-11-27T11:31:33+00:00</lastmod>
+  <lastmod>2017-12-06T02:08:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.the-ez-post.com/policy</loc>
+  <lastmod>2017-12-06T02:08:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.the-ez-post.com/contact</loc>
-  <lastmod>2017-11-27T11:31:33+00:00</lastmod>
+  <lastmod>2017-12-06T02:08:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.the-ez-post.com/articles/malaysia-souvenir</loc>
-  <lastmod>2017-11-27T11:31:33+00:00</lastmod>
+  <lastmod>2017-12-06T02:08:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.the-ez-post.com/articles/malaysia-travel-apps</loc>
+  <lastmod>2017-12-06T02:08:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.the-ez-post.com/articles/christmas-draw</loc>
+  <lastmod>2017-12-06T02:08:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.the-ez-post.com/articles/chrismas-gift</loc>
+  <lastmod>2017-12-06T02:08:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 </urlset>
